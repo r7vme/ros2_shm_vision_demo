@@ -27,7 +27,7 @@ void fill_loaned_message(
   const cv::Mat & frame, uint64_t timestamp,
   uint64_t count)
 {
-  ImageMsg & msg = loanedMsg.get();
+  auto & msg = loanedMsg.get();
   auto size = frame.elemSize() * frame.total();
   if (size > ImageMsg::MAX_SIZE) {
     std::stringstream s;
