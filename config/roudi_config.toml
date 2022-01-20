@@ -6,5 +6,5 @@ version = 1
 
 [[segment.mempool]]
 size = 6301024
-count = 1024
+count = 128
 
